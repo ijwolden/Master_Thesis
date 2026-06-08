@@ -1,15 +1,5 @@
 import numpy as np
 
-"""
-FINAL CORRECTED COMPLIANCE MATRIX METHOD
-
-This implements the homogenization approach properly for a triangular lattice
-with one horizontal base strut.
-
-The key correction: For E_11 (horizontal loading), we need to use the correct
-strain energy formulation accounting for how each strut deforms under the
-applied macroscopic strain.
-"""
 
 def relative_density(t, d, x, z, theta_deg):
     theta = np.radians(theta_deg)
